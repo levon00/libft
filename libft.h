@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lkhalaty <levon.khalatyan@edu.ysu.am>      +#+  +:+       +#+        */
+/*   By: lkhalaty <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/11 23:46:43 by lkhalaty          #+#    #+#             */
-/*   Updated: 2026/02/15 12:59:40 by lkhalaty         ###   ########.fr       */
+/*   Created: 2026/02/19 22:00:42 by lkhalaty          #+#    #+#             */
+/*   Updated: 2026/02/20 00:51:11 by lkhalaty         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,12 @@
 # define LIBFT_H
 
 # include <unistd.h>
-# include <stdio.h>
 # include <stdlib.h>
 
 typedef struct s_list
 {
-	struct s_list	*next;
 	void			*content;
+	struct s_list	*next;
 }	t_list;
 
 t_list	*ft_lstlast(t_list *lst);
